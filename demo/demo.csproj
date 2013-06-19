@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{94E47969-4188-4A0D-976C-E73B589B9A7D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>demo</RootNamespace>
+    <AssemblyName>demo</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="images\00.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\22.jpg" />
+    <Content Include="images\61.jpg" />
+    <Content Include="images\bakground.jpg" />
+    <Content Include="images\header.jpg" />
+    <Content Include="images\lvye.JPG" />
+    <Content Include="images\nav_bj.gif" />
+    <Content Include="images\top_01.gif" />
+    <Content Include="images\top_03.png" />
+    <Content Include="images\圆边框1.JPG" />
+    <Content Include="images\绿星星.jpg" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="UserControl\CO2_OverView_Chart.ascx" />
+    <Content Include="UserControl\find3.ascx" />
+    <Content Include="UserControl\findl2.ascx" />
+    <Content Include="UserControl\Sensor2_Chart.ascx" />
+    <Content Include="UserControl\Sensor4_Chart1.ascx" />
+    <Content Include="UserControl\Navigationt.ascx" />
+    <Content Include="UserControl\Sensor5_Chart.ascx" />
+    <Content Include="UserControl\Sensor7_Chart.ascx" />
+    <Content Include="UserControl\Sensor_Option.ascx" />
+    <Content Include="UserControl\find1.ascx" />
+    <Content Include="UserControl\suggest.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Details.aspx" />
+    <Content Include="WebForm2.aspx" />
+    <Content Include="Information.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IUpdateChart.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl\CO2_OverView_Chart.ascx.cs">
+      <DependentUpon>CO2_OverView_Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\CO2_OverView_Chart.ascx.designer.cs">
+      <DependentUpon>CO2_OverView_Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\find3.ascx.cs">
+      <DependentUpon>find3.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\find3.ascx.designer.cs">
+      <DependentUpon>find3.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\findl2.ascx.cs">
+      <DependentUpon>findl2.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\findl2.ascx.designer.cs">
+      <DependentUpon>findl2.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sensor2_Chart.ascx.cs">
+      <DependentUpon>Sensor2_Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Sensor2_Chart.ascx.designer.cs">
+      <DependentUpon>Sensor2_Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sensor4_Chart1.ascx.cs">
+      <DependentUpon>Sensor4_Chart1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Sensor4_Chart1.ascx.designer.cs">
+      <DependentUpon>Sensor4_Chart1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Navigationt.ascx.cs">
+      <DependentUpon>Navigationt.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Navigationt.ascx.designer.cs">
+      <DependentUpon>Navigationt.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sensor5_Chart.ascx.cs">
+      <DependentUpon>Sensor5_Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Sensor5_Chart.ascx.designer.cs">
+      <DependentUpon>Sensor5_Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sensor7_Chart.ascx.cs">
+      <DependentUpon>Sensor7_Chart.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Sensor7_Chart.ascx.designer.cs">
+      <DependentUpon>Sensor7_Chart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\Sensor_Option.ascx.cs">
+      <DependentUpon>Sensor_Option.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\Sensor_Option.ascx.designer.cs">
+      <DependentUpon>Sensor_Option.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\find1.ascx.cs">
+      <DependentUpon>find1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\find1.ascx.designer.cs">
+      <DependentUpon>find1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\suggest.ascx.cs">
+      <DependentUpon>suggest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\suggest.ascx.designer.cs">
+      <DependentUpon>suggest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Information.aspx.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Information.aspx.designer.cs">
+      <DependentUpon>Information.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49189</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
